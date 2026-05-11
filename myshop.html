@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shri Vinayak R.O. — Pure Water Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#">Shri Vinayak <span>R.O.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="water-bg">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="var(--accent)" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,186.7C672,203,768,181,864,154.7C960,128,1056,96,1152,101.3C1248,107,1344,149,1392,170.7L1440,192L1440,320L0,320Z"/>
+    </svg>
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="var(--accent2)" d="M0,224L60,213.3C120,203,240,181,360,165.3C480,149,600,139,720,154.7C840,171,960,213,1080,218.7C1200,224,1320,192,1380,176L1440,160L1440,320L0,320Z"/>
+    </svg>
+  </div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Pure Water. Trusted Service.</div>
+    <h1 class="hero-title">
+      Shri Vinayak<br>
+      <em>R.O. Sales &amp; Service</em>
+    </h1>
+    <p class="hero-sub">
+      Alwar's trusted name in water purification — delivering safe, clean drinking water solutions for homes and businesses since years.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary">Get a Free Service</a>
+      <a href="#products" class="btn-outline">View Products</a>
+    </div>
+  </div>
+
+  <div class="hero-stat">
+    <div class="hero-stat-num" id="counter">0+</div>
+    <div class="hero-stat-label">Happy Customers</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-text reveal">
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">Clean Water is Not a Luxury — <em>It's a Right</em></h2>
+      <p>Shri Vinayak R.O. Sales &amp; Service has been serving the people of Alwar with top-quality water purification systems. We believe every household deserves access to safe, pure drinking water.</p>
+      <p>From installation to annual maintenance, we're with you at every step — offering honest pricing, genuine spare parts, and fast on-site support.</p>
+    </div>
+    <div class="about-visual reveal">
+      <svg class="ro-diagram" viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pipe system illustration -->
+        <defs>
+          <linearGradient id="pipeG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4ea8d8" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#163a62" stop-opacity="0.5"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- Stage labels -->
+        <text x="30" y="20" font-family="DM Sans" font-size="9" fill="#4ea8d8" letter-spacing="2" opacity="0.7">PURIFICATION STAGES</text>
+
+        <!-- Stage 1: Sediment -->
+        <rect x="20" y="40" width="70" height="90" rx="6" fill="#0f2a4a" stroke="#4ea8d8" stroke-width="0.8" opacity="0.9"/>
+        <rect x="35" y="50" width="40" height="70" rx="4" fill="url(#pipeG)" opacity="0.3"/>
+        <circle cx="55" cy="65" r="12" fill="#163a62" stroke="#4ea8d8" stroke-width="0.8"/>
+        <text x="55" y="70" font-family="DM Sans" font-size="9" fill="#7ecbf5" text-anchor="middle">PP</text>
+        <text x="55" y="148" font-family="DM Sans" font-size="9" fill="#4ea8d8" text-anchor="middle" opacity="0.8">Sediment</text>
+
+        <!-- Connector 1 -->
+        <line x1="90" y1="85" x2="120" y2="85" stroke="#4ea8d8" stroke-width="1" stroke-dasharray="4 3" opacity="0.6">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.5s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Stage 2: Carbon -->
+        <rect x="120" y="40" width="70" height="90" rx="6" fill="#0f2a4a" stroke="#4ea8d8" stroke-width="0.8" opacity="0.9"/>
+        <rect x="135" y="50" width="40" height="70" rx="4" fill="url(#pipeG)" opacity="0.3"/>
+        <circle cx="155" cy="65" r="12" fill="#163a62" stroke="#4ea8d8" stroke-width="0.8"/>
+        <text x="155" y="70" font-family="DM Sans" font-size="8" fill="#7ecbf5" text-anchor="middle">CTO</text>
+        <text x="155" y="148" font-family="DM Sans" font-size="9" fill="#4ea8d8" text-anchor="middle" opacity="0.8">Carbon</text>
+
+        <!-- Connector 2 -->
+        <line x1="190" y1="85" x2="220" y2="85" stroke="#4ea8d8" stroke-width="1" stroke-dasharray="4 3" opacity="0.6">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Stage 3: RO Membrane -->
+        <rect x="220" y="30" width="80" height="110" rx="6" fill="#0f2a4a" stroke="#7ecbf5" stroke-width="1.2" opacity="0.95" filter="url(#glow)"/>
+        <rect x="235" y="42" width="50" height="84" rx="4" fill="#163a62" opacity="0.6"/>
+        <ellipse cx="260" cy="65" rx="16" ry="18" fill="none" stroke="#4ea8d8" stroke-width="1"/>
+        <ellipse cx="260" cy="65" rx="8" ry="10" fill="#4ea8d8" opacity="0.3"/>
+        <text x="260" y="70" font-family="DM Sans" font-size="8" fill="#7ecbf5" text-anchor="middle">RO</text>
+        <text x="260" y="155" font-family="DM Sans" font-size="9" fill="#7ecbf5" text-anchor="middle" opacity="0.9" font-weight="500">Membrane</text>
+
+        <!-- Connector 3 -->
+        <line x1="300" y1="85" x2="330" y2="85" stroke="#4ea8d8" stroke-width="1" stroke-dasharray="4 3" opacity="0.6">
+          <animate attributeName="stroke-dashoffset" values="0;-14" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Stage 4: Post Carbon -->
+        <rect x="330" y="40" width="35" height="90" rx="6" fill="#0f2a4a" stroke="#4ea8d8" stroke-width="0.8" opacity="0.9"/>
+        <circle cx="347" cy="65" r="10" fill="#163a62" stroke="#4ea8d8" stroke-width="0.8"/>
+        <text x="347" y="70" font-family="DM Sans" font-size="7.5" fill="#7ecbf5" text-anchor="middle">UV</text>
+        <text x="347" y="148" font-family="DM Sans" font-size="9" fill="#4ea8d8" text-anchor="middle" opacity="0.8">UV</text>
+
+        <!-- Water drop result -->
+        <path d="M190 220 Q190 195 175 215 Q165 228 175 238 Q182 248 190 248 Q198 248 205 238 Q215 228 205 215 Q190 195 190 220Z" fill="#4ea8d8" opacity="0.9" filter="url(#glow)">
+          <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="2.5s" repeatCount="indefinite"/>
+        </path>
+        <text x="190" y="265" font-family="Cormorant Garamond" font-size="13" fill="#7ecbf5" text-anchor="middle" font-style="italic">Pure Water</text>
+
+        <!-- Arrow to drop -->
+        <path d="M260 145 Q260 200 220 215" stroke="#4ea8d8" stroke-width="0.8" fill="none" stroke-dasharray="4 3" opacity="0.5"/>
+        <polygon points="218,210 215,220 225,217" fill="#4ea8d8" opacity="0.5"/>
+
+        <!-- TDS badge -->
+        <rect x="60" y="195" width="110" height="36" rx="18" fill="#163a62" stroke="#4ea8d8" stroke-width="0.8"/>
+        <text x="115" y="208" font-family="DM Sans" font-size="8" fill="#4ea8d8" text-anchor="middle" letter-spacing="1.5">TDS CONTROLLER</text>
+        <text x="115" y="222" font-family="Cormorant Garamond" font-size="11" fill="#7ecbf5" text-anchor="middle">Mineral Retention</text>
+
+        <!-- Mineralizer -->
+        <rect x="240" y="290" width="100" height="36" rx="18" fill="#163a62" stroke="#4ea8d8" stroke-width="0.8"/>
+        <text x="290" y="305" font-family="DM Sans" font-size="8" fill="#4ea8d8" text-anchor="middle" letter-spacing="1">MINERALIZER</text>
+        <text x="290" y="319" font-family="Cormorant Garamond" font-size="11" fill="#7ecbf5" text-anchor="middle">pH Balanced</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="wrapper">
+    <div class="section-label reveal">Services</div>
+    <h2 class="section-title reveal">Everything Your Water <em>Needs</em></h2>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <span class="service-num">01</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <path d="M22 10 Q22 10 14 22 Q10 28 14 34 Q17 40 22 40 Q27 40 30 34 Q34 28 30 22 Q22 10 22 10Z" fill="none" stroke="#7ecbf5" stroke-width="1.2"/>
+        <path d="M16 27 Q19 32 22 32 Q25 32 28 27" stroke="#4ea8d8" stroke-width="1" fill="none"/>
+      </svg>
+      <h3>Installation</h3>
+      <p>Professional installation of RO purifiers with zero-mess service. We handle everything — from plumbing to first flush testing.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">02</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <circle cx="22" cy="22" r="8" stroke="#7ecbf5" stroke-width="1"/>
+        <path d="M22 8 L22 14 M22 30 L22 36 M8 22 L14 22 M30 22 L36 22" stroke="#4ea8d8" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="3" fill="#4ea8d8" opacity="0.7"/>
+      </svg>
+      <h3>Annual Maintenance</h3>
+      <p>Comprehensive AMC plans with filter replacement, membrane cleaning, and performance checks — keeping your water pure year-round.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">03</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <rect x="12" y="14" width="20" height="16" rx="2" stroke="#7ecbf5" stroke-width="1"/>
+        <path d="M16 30 L16 34 M28 30 L28 34 M14 34 L30 34" stroke="#4ea8d8" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M17 20 L20 23 L27 16" stroke="#4ea8d8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>Filter Replacement</h3>
+      <p>Genuine OEM filters and membranes replaced by trained technicians. We test TDS levels before and after every service.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">04</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <path d="M15 28 L22 14 L29 28" stroke="#7ecbf5" stroke-width="1" stroke-linejoin="round"/>
+        <path d="M12 28 L32 28" stroke="#4ea8d8" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M19 28 L19 22 M25 28 L25 22" stroke="#4ea8d8" stroke-width="0.8"/>
+      </svg>
+      <h3>Repair &amp; Troubleshooting</h3>
+      <p>Fast response to low-pressure issues, leaks, unusual taste complaints, or UV failure. Most repairs resolved in a single visit.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">05</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <circle cx="22" cy="20" r="6" stroke="#7ecbf5" stroke-width="1"/>
+        <path d="M22 26 L22 32 M18 32 Q18 36 22 36 Q26 36 26 32 L26 32" stroke="#4ea8d8" stroke-width="1" stroke-linecap="round"/>
+        <path d="M16 16 Q12 14 12 10 M28 16 Q32 14 32 10" stroke="#4ea8d8" stroke-width="0.8" opacity="0.6"/>
+      </svg>
+      <h3>Water Quality Testing</h3>
+      <p>On-site TDS and pH testing with a detailed report. Know exactly what's in your water before and after purification.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">06</span>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#4ea8d8" stroke-width="0.8"/>
+        <rect x="13" y="13" width="18" height="18" rx="2" stroke="#7ecbf5" stroke-width="1"/>
+        <circle cx="22" cy="22" r="4" stroke="#4ea8d8" stroke-width="0.9"/>
+        <path d="M10 22 L13 22 M31 22 L34 22 M22 10 L22 13 M22 31 L22 34" stroke="#4ea8d8" stroke-width="0.8" stroke-linecap="round"/>
+      </svg>
+      <h3>Commercial Solutions</h3>
+      <p>High-capacity RO systems for offices, restaurants, and factories. Custom designed for your flow-rate and usage requirements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="wrapper">
+    <div class="section-label reveal">Products</div>
+    <h2 class="section-title reveal">Systems We <em>Install &amp; Service</em></h2>
+  </div>
+  <div class="products-list">
+    <div class="product-item reveal">
+      <div class="product-name">Kent Grand Plus</div>
+      <div class="product-desc">8L tank, 20 LPH flow, UV + UF + RO, TDS controller</div>
+      <div class="product-tag">Bestseller</div>
+    </div>
+    <div class="product-item reveal">
+      <div class="product-name">Aquaguard Delight</div>
+      <div class="product-desc">7L tank, active copper technology, wall mount</div>
+      <div class="product-tag">Premium</div>
+    </div>
+    <div class="product-item reveal">
+      <div class="product-name">Pureit Eco Water Saver</div>
+      <div class="product-desc">8L, advanced alert system, 6-stage purification</div>
+      <div class="product-tag">Eco-Friendly</div>
+    </div>
+    <div class="product-item reveal">
+      <div class="product-name">Blue Star Aristo</div>
+      <div class="product-desc">7L, UV e-boiling, 6-stage purification, ISI marked</div>
+      <div class="product-tag">Popular</div>
+    </div>
+    <div class="product-item reveal">
+      <div class="product-name">Commercial RO Systems</div>
+      <div class="product-desc">50–500 LPH industrial grade, custom configuration</div>
+      <div class="product-tag">B2B</div>
+    </div>
+    <div class="product-item reveal">
+      <div class="product-name">Under-Sink RO Units</div>
+      <div class="product-desc">Space-saving, tankless, direct flow, kitchen-fit</div>
+      <div class="product-tag">New</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-inner">
+    <div>
+      <div class="section-label reveal">Why Choose Us</div>
+      <h2 class="section-title reveal">Built on Trust,<br><em>Proven by Results</em></h2>
+      <div class="why-points">
+        <div class="why-point" data-delay="0">
+          <div class="why-point-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M3 9l4 4L15 5"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Genuine Spare Parts</h4>
+            <p>We use only OEM-certified filters, membranes, and components — never cheap substitutes.</p>
+          </div>
+        </div>
+        <div class="why-point" data-delay="150">
+          <div class="why-point-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <circle cx="9" cy="9" r="7"/>
+              <path d="M9 5v4l3 2"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Same-Day Service</h4>
+            <p>Call before noon, get serviced today. We know clean water can't wait.</p>
+          </div>
+        </div>
+        <div class="why-point" data-delay="300">
+          <div class="why-point-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M9 2l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Transparent Pricing</h4>
+            <p>Fixed service charges, no hidden costs. You see the invoice before we begin.</p>
+          </div>
+        </div>
+        <div class="why-point" data-delay="450">
+          <div class="why-point-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M9 1C5 1 2 4 2 8c0 5 7 10 7 10s7-5 7-10c0-4-3-7-7-7z"/>
+              <circle cx="9" cy="8" r="2.5"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Alwar-Based, Always Near</h4>
+            <p>We serve all areas of Alwar — Rajgarh, Malakhera, Baswa, and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="why-numbers reveal">
+        <div class="why-num-card">
+          <div class="number" id="c1">0</div>
+          <div class="label">Years of Service</div>
+        </div>
+        <div class="why-num-card">
+          <div class="number" id="c2">0</div>
+          <div class="label">Brands Serviced</div>
+        </div>
+        <div class="why-num-card">
+          <div class="number" id="c3">0</div>
+          <div class="label">AMC Customers</div>
+        </div>
+        <div class="why-num-card">
+          <div class="number" id="c4">0</div>
+          <div class="label">% Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="wrapper">
+    <div class="section-label reveal">Testimonials</div>
+    <h2 class="section-title reveal">What Our <em>Customers Say</em></h2>
+  </div>
+  <div class="testimonials-track">
+    <div class="testimonials-inner" id="testimonialsInner">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Shri Vinayak has been maintaining our RO for 3 years. They're always on time, honest about what needs replacing, and never try to upsell unnecessarily."</p>
+        <div class="testimonial-author">Rahul Sharma — Malviya Nagar</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Called them at 10am, they arrived by 1pm. Fixed the pressure issue and replaced the membrane filter. Professional, clean, and affordable."</p>
+        <div class="testimonial-author">Priya Agarwal — Vaishali Nagar</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Got a commercial unit installed for our office. The team was incredibly knowledgeable and even helped us decide the right capacity. Excellent service."</p>
+        <div class="testimonial-author">Dinesh Gupta — C-Scheme</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"I've been using their AMC plan for 2 years. Peace of mind knowing experts are watching over my family's drinking water. Highly recommended."</p>
+        <div class="testimonial-author">Sunita Meena — Mansarovar</div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-nav" id="testimonialsNav">
+    <button class="testimonial-dot active" data-index="0"></button>
+    <button class="testimonial-dot" data-index="1"></button>
+    <button class="testimonial-dot" data-index="2"></button>
+    <button class="testimonial-dot" data-index="3"></button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="wrapper">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal">Book a Service <em>Today</em></h2>
+  </div>
+  <div class="contact-inner">
+    <div>
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M9 1C5 1 2 4 2 8c0 5 7 10 7 10s7-5 7-10c0-4-3-7-7-7z"/>
+              <circle cx="9" cy="8" r="2.5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Alwar, Rajasthan<br>We serve all areas of Alwar</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M3 3h2l1.5 4L5 8.5a11 11 0 005.5 5.5L12 12.5l4 1.5v2A2 2 0 0114 18C6 18 0 12 0 4a2 2 0 012-2h1z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val">+91 9785486454<br>Mon–Sat, 8am – 8pm</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <rect x="1" y="3" width="16" height="12" rx="2"/>
+              <path d="M1 6l8 5 8-5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">vinayaksharma135017@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <circle cx="9" cy="9" r="7"/>
+              <path d="M9 5v4l3 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Working Hours</div>
+            <div class="contact-item-val">Monday – Saturday<br>8:00 AM to 8:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="contactForm" class="contact-form reveal">
+      <div class="form-group">
+        <label for="nameInput">Your Name</label>
+        <input id="nameInput" name="name" type="text" placeholder="Rahul Sharma" required />
+      </div>
+      <div class="form-group">
+        <label for="phoneInput">Phone Number</label>
+        <input id="phoneInput" name="phone" type="tel" placeholder="+91 98765 43210" required />
+      </div>
+      <div class="form-group">
+        <label for="serviceSelect">Service Needed</label>
+        <select id="serviceSelect" name="service" required>
+          <option value="">Select a service</option>
+          <option>New RO Installation</option>
+          <option>Filter Replacement</option>
+          <option>Annual Maintenance (AMC)</option>
+          <option>Repair / Troubleshooting</option>
+          <option>Water Quality Testing</option>
+          <option>Commercial RO</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="messageInput">Message (Optional)</label>
+        <textarea id="messageInput" name="message" placeholder="Describe your issue or request..."></textarea>
+      </div>
+      <button class="btn-primary" id="submitBtn" type="submit">
+        Request Service →
+      </button>
+      <div id="formMsg">
+        ✓ Request sent! We'll call you within 2 hours.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Shri Vinayak <span>R.O.</span></div>
+  <div class="footer-copy">© 2025 Shri Vinayak R.O. Sales &amp; Service, Alwar</div>
+  <ul class="footer-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
